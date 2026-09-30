@@ -2097,6 +2097,154 @@
         <Type>BoxTube</Type>
       </P>
     </V>
+    <V Name="TurntableConveyor1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:TurntableConveyor">
+      <LR>1.7243707|0.83|-6.446398|||</LR>
+      <Id>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Id>
+      <P xsi:type="e3d:TurntableConveyorProperties">
+        <BillOfMaterialsCodeExpr>
+          <E>Owner.Name</E>
+        </BillOfMaterialsCodeExpr>
+        <BillOfMaterialsDescriptionExpr>
+          <E>Owner.Type</E>
+        </BillOfMaterialsDescriptionExpr>
+        <CenterDiameter>0.08</CenterDiameter>
+        <FrictionMaterial>
+          <Name>Steel</Name>
+        </FrictionMaterial>
+        <IsRotateMotorOn>0</IsRotateMotorOn>
+        <LeftSide xsi:type="e3d:ConveyorSideProperties">
+          <FrictionMaterial>
+            <Name>Steel</Name>
+          </FrictionMaterial>
+          <Height>0.176</Height>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-256</Diffuse>
+            </MeshMaterial>
+          </Material>
+          <Step>0.043</Step>
+          <Width>0.0545</Width>
+        </LeftSide>
+        <Length>1.71</Length>
+        <Motor xsi:type="e3d:ConveyorMotorProperties">
+          <CurrentSpeed>0.5</CurrentSpeed>
+          <Speed>
+            <E>0.5</E>
+          </Speed>
+          <StartSpeed>0.5</StartSpeed>
+        </Motor>
+        <MotorVisual>
+          <Type>e3d:ConveyorVisual</Type>
+        </MotorVisual>
+        <NewNameExpr>
+          <E>"TurntableConveyor"+ID</E>
+        </NewNameExpr>
+        <RightSide xsi:type="e3d:ConveyorSideProperties">
+          <FrictionMaterial>
+            <Name>Steel</Name>
+          </FrictionMaterial>
+          <Height>0.176</Height>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-256</Diffuse>
+            </MeshMaterial>
+          </Material>
+          <Step>0.043</Step>
+          <Width>0.0545</Width>
+        </RightSide>
+        <RollerColor>
+          <name>Silver</name>
+        </RollerColor>
+        <RollerCount>9</RollerCount>
+        <RollerDiameter>0.08</RollerDiameter>
+        <RollerPitch>0.19</RollerPitch>
+        <RollerWidth>0.8</RollerWidth>
+        <RotateAxis>|1|</RotateAxis>
+        <RotateMotorSpeed>0</RotateMotorSpeed>
+        <SurfaceMaterial>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-4144960</Diffuse>
+          </MeshMaterial>
+        </SurfaceMaterial>
+        <SurfaceSideMaterial>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-4144960</Diffuse>
+          </MeshMaterial>
+        </SurfaceSideMaterial>
+        <TargetPosition>0</TargetPosition>
+        <ToolTipExpr>
+          <E>Owner.Name+' Pos='+Format('0.###',Position)+' Offset='+Format('0.###',Offset)</E>
+        </ToolTipExpr>
+        <Type>Turntable Conveyor</Type>
+        <Width>0.8</Width>
+      </P>
+      <CN>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>Start</Name>
+          <Start />
+          <End />
+          <Normal>-1||</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>End</Name>
+          <Start>1.71||</Start>
+          <End>1.71||</End>
+          <Normal>1||</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C45</Name>
+          <Start>0.25042373||0.6045763</Start>
+          <End>0.25042373||0.6045763</End>
+          <Normal>-0.70710677||0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C225</Name>
+          <Start>1.4595764||-0.6045763</Start>
+          <End>1.4595764||-0.6045763</End>
+          <Normal>0.70710677||-0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C90</Name>
+          <Start>0.855||0.855</Start>
+          <End>0.855||0.855</End>
+          <Normal>||1</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C270</Name>
+          <Start>0.855||-0.855</Start>
+          <End>0.855||-0.855</End>
+          <Normal>||-1</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C135</Name>
+          <Start>1.4595764||0.6045763</Start>
+          <End>1.4595764||0.6045763</End>
+          <Normal>0.70710677||0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C315</Name>
+          <Start>0.25042373||-0.6045763</Start>
+          <End>0.25042373||-0.6045763</End>
+          <Normal>-0.70710677||-0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+      </CN>
+    </V>
     <V Name="Sphere1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:SphereVisual">
       <LR>-1.9549124|0.5|-7.4268093|||</LR>
       <Id>de07fdca-516d-4285-8715-b368ed000d0a</Id>
