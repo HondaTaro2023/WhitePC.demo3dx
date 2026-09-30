@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>WDComponents</AssemblyName>
+    <RootNamespace>Demo3D.Components</RootNamespace>
+    <ProjectGuid>{E6845388-C185-4E5F-ABBB-B8B4CCC11A27}</ProjectGuid>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <DefaultItemExcludes>$(DefaultItemExcludes);.archive\**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CircuitBreaker.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="Disconnect.cs" />
+    <Compile Include="Horn.cs" />
+    <Compile Include="Lock.cs" />
+    <Compile Include="Nametag.cs" />
+    <Compile Include="NativeObject.cs" />
+    <Compile Include="PanelBoard.cs" />
+    <Compile Include="Panel.cs" />
+    <Compile Include="EStop.cs" />
+    <Compile Include="Lamp.cs" />
+    <Compile Include="LightCurtain.cs" />
+    <Compile Include="NumberDisplay.cs" />
+    <Compile Include="RectangularLED.cs" />
+    <Compile Include="Relay.cs" />
+    <Compile Include="PowerContactor.cs" />
+    <Compile Include="PowerSupply.cs" />
+    <Compile Include="PushButton.cs" />
+    <Compile Include="RectangularLight.cs" />
+    <Compile Include="RoundLED.cs" />
+    <Compile Include="RoundLight.cs" />
+    <Compile Include="SafetyMat.cs" />
+    <Compile Include="SelectorSwitch.cs" />
+    <Compile Include="SphereLED.cs" />
+    <Compile Include="SphereLight.cs" />
+    <Compile Include="StackLight.cs" />
+    <Compile Include="TextDisplay.cs" />
+    <Compile Include="WiringActions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Demo3D.Shared">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="..\Demo3D.targets" />
+</Project>
