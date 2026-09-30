@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
-Project("{E6845388-C185-4E5F-ABBB-B8B4CCC11A27}") = "_3DControlPanelsFramework", "_3DControlPanelsFramework\_3DControlPanelsFramework.csproj", "{E6845388-C185-4E5F-ABBB-B8B4CCC11A27}"
+Project("{E6845388-C185-4E5F-ABBB-B8B4CCC11A27}") = "_3DControlPanelsFramework", "_3DControlPanelsFramework.csproj", "{E6845388-C185-4E5F-ABBB-B8B4CCC11A27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
