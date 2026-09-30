@@ -411,7 +411,7 @@
       </P>
     </V>
     <V Name="Container1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:ContainerVisual">
-      <LR>-4.9639807|0.15|-8.279244|||</LR>
+      <LR>-6.6376143|0.15|-5.555253|||</LR>
       <Id>c1269652-848b-4a57-a6bc-c641f19c7365</Id>
       <P xsi:type="e3d:ContainerProperties">
         <BaseRatio>0.9</BaseRatio>
@@ -423,7 +423,7 @@
         <Height>0.3</Height>
         <Material>
           <MeshMaterial xsi:type="e3d:MeshMaterial">
-            <Diffuse>-256</Diffuse>
+            <Diffuse>-1120086</Diffuse>
           </MeshMaterial>
         </Material>
         <NewNameExpr>
