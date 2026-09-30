@@ -14,6 +14,11 @@
       <LayersFile>layers.csv</LayersFile>
     </LayerLibrary>
     <FrictionMaterialLibrary />
+    <ScriptLibrary>
+      <Scripts>
+        <Script Key="e6845388-c185-4e5f-abbb-b8b4ccc11a27" PackageConfig="scripts\_3DControlPanelsFramework.e3dpackageconfig" Info="scripts\_3DControlPanelsFramework\_3DControlPanelsFramework.info" />
+      </Scripts>
+    </ScriptLibrary>
     <FrictionConfiguration>
       <FrictionFile>friction.csv</FrictionFile>
     </FrictionConfiguration>
@@ -22,6 +27,9 @@
     <V Name="SceneVisual" Parent="" xsi:type="e3d:SceneVisual">
       <Id>632606e6-df1e-4e89-9504-69ea40acc49a</Id>
       <Static>1</Static>
+      <AS valtype="e3d:Guid">
+        <E>c6e0d84c-c8a8-42aa-8edf-e23f8af0dbaf</E>
+      </AS>
       <P xsi:type="e3d:SceneProperties">
         <BottomColor>-6241025</BottomColor>
         <DefaultFloor>
@@ -56,6 +64,1663 @@
         <Text>Im soo tired</Text>
         <Type>TextVisual</Type>
       </P>
+    </V>
+    <V Name="Box3" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxVisual">
+      <LR>-6.939308|0.5|-8.053535|||</LR>
+      <Id>13c4d847-40bb-41ad-b778-9d2963ac04c3</Id>
+      <P xsi:type="e3d:BoxProperties">
+        <Depth>1</Depth>
+        <ExtraMaterials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-9868951</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-1</Diffuse>
+            </e>
+          </MeshMaterials>
+        </ExtraMaterials>
+        <FrictionMaterial>
+          <Name>Corrugated</Name>
+        </FrictionMaterial>
+        <Height>1</Height>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-1</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Box"+ID</E>
+        </NewNameExpr>
+        <Type>Box</Type>
+        <Width>1</Width>
+      </P>
+    </V>
+    <V Name="ESTOP1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxVisual">
+      <LR>1.13377|0.3|-8.581909|||</LR>
+      <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+      <P xsi:type="e3d:BoxProperties">
+        <CustomProperties>
+          <CP>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>ButtonType</Name>
+              <Description>EStop button type (Toggle, Momentary, or MomentaryTimeout)</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Button</Category>
+              <Type>Demo3D.Components._3DControlPanels.EStop+eButtonType</Type>
+              <Value xsi:type="Demo3D.Components._3DControlPanels.EStop+eButtonType">Toggle</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>ConnectorEnabled</Name>
+              <Description>Connector enabled and visible</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Connector</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>DiagramInformation</Name>
+              <Description>Information used for the Wiring Diagram component</Description>
+              <Category>Wiring</Category>
+              <Type>e3d:ScriptingObject</Type>
+              <Value xsi:type="e3d:ScriptingObject">
+                <N></N>
+                <P valtype="e3d:PDXML">
+                  <E>
+                    <Category>General</Category>
+                    <Description></Description>
+                    <Name>Layer</Name>
+                    <Type xsi:type="System.RuntimeType">e3d:VisualReference</Type>
+                  </E>
+                  <E>
+                    <Category>General</Category>
+                    <Description></Description>
+                    <Name>Diagram</Name>
+                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                  </E>
+                  <E>
+                    <Category>General</Category>
+                    <Description></Description>
+                    <Name>Bindings</Name>
+                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                  </E>
+                  <E>
+                    <Category>General</Category>
+                    <Description></Description>
+                    <Name>Properties</Name>
+                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                  </E>
+                </P>
+                <PB>
+                  <KT>System.String</KT>
+                  <VT>System.Object</VT>
+                  <C>
+                    <E>
+                      <K>Bindings</K>
+                      <V xsi:type="e3d:ScriptingObject">
+                        <N></N>
+                        <P valtype="e3d:PDXML" />
+                        <PB>
+                          <KT>System.String</KT>
+                          <VT>System.Object</VT>
+                          <C />
+                        </PB>
+                      </V>
+                    </E>
+                    <E>
+                      <K>Diagram</K>
+                      <V xsi:type="e3d:ScriptingObject">
+                        <N></N>
+                        <P valtype="e3d:PDXML">
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>Position</Name>
+                            <Type xsi:type="System.RuntimeType">System.Windows.Point</Type>
+                          </E>
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>Size</Name>
+                            <Type xsi:type="System.RuntimeType">System.Windows.Size</Type>
+                          </E>
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>Mirror</Name>
+                            <Type xsi:type="System.RuntimeType">xsd:Boolean</Type>
+                          </E>
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>Rail</Name>
+                            <Type xsi:type="System.RuntimeType">xsd:double</Type>
+                          </E>
+                        </P>
+                        <PB>
+                          <KT>System.String</KT>
+                          <VT>System.Object</VT>
+                          <C>
+                            <E>
+                              <K>Mirror</K>
+                              <V xsi:type="xsd:Boolean">0</V>
+                            </E>
+                            <E>
+                              <K>Position</K>
+                              <V xsi:type="System.Windows.Point">
+                                <X>340</X>
+                                <Y>300</Y>
+                              </V>
+                            </E>
+                            <E>
+                              <K>Rail</K>
+                              <V xsi:type="xsd:double">150</V>
+                            </E>
+                            <E>
+                              <K>Size</K>
+                              <V xsi:type="System.Windows.Size">
+                                <Height>60</Height>
+                                <Width>160</Width>
+                              </V>
+                            </E>
+                          </C>
+                        </PB>
+                      </V>
+                    </E>
+                    <E>
+                      <K>Layer</K>
+                      <V xsi:type="e3d:VisualReference" />
+                    </E>
+                    <E>
+                      <K>Properties</K>
+                      <V xsi:type="e3d:ScriptingObject">
+                        <N></N>
+                        <P valtype="e3d:PDXML">
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>EStopPressed</Name>
+                            <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                          </E>
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>R_LightPower</Name>
+                            <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                          </E>
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>R_NO1</Name>
+                            <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                          </E>
+                          <E>
+                            <Category>General</Category>
+                            <Description></Description>
+                            <Name>W_NO1</Name>
+                            <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                          </E>
+                        </P>
+                        <PB>
+                          <KT>System.String</KT>
+                          <VT>System.Object</VT>
+                          <C>
+                            <E>
+                              <K>EStopPressed</K>
+                              <V xsi:type="e3d:ScriptingObject">
+                                <N></N>
+                                <P valtype="e3d:PDXML">
+                                  <E>
+                                    <Category>General</Category>
+                                    <Description></Description>
+                                    <Name>0</Name>
+                                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                                  </E>
+                                </P>
+                                <PB>
+                                  <KT>System.String</KT>
+                                  <VT>System.Object</VT>
+                                  <C>
+                                    <E>
+                                      <K>0</K>
+                                      <V xsi:type="e3d:ScriptingObject">
+                                        <N></N>
+                                        <P valtype="e3d:PDXML">
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Position</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Point</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Size</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Size</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Mirror</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:Boolean</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Rail</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:double</Type>
+                                          </E>
+                                        </P>
+                                        <PB>
+                                          <KT>System.String</KT>
+                                          <VT>System.Object</VT>
+                                          <C>
+                                            <E>
+                                              <K>Mirror</K>
+                                              <V xsi:type="xsd:Boolean">0</V>
+                                            </E>
+                                            <E>
+                                              <K>Position</K>
+                                              <V xsi:type="System.Windows.Point">
+                                                <X>0</X>
+                                                <Y>0</Y>
+                                              </V>
+                                            </E>
+                                            <E>
+                                              <K>Rail</K>
+                                              <V xsi:type="xsd:double">1</V>
+                                            </E>
+                                            <E>
+                                              <K>Size</K>
+                                              <V xsi:type="System.Windows.Size">
+                                                <Height>20</Height>
+                                                <Width>80</Width>
+                                              </V>
+                                            </E>
+                                          </C>
+                                        </PB>
+                                      </V>
+                                    </E>
+                                  </C>
+                                </PB>
+                              </V>
+                            </E>
+                            <E>
+                              <K>R_LightPower</K>
+                              <V xsi:type="e3d:ScriptingObject">
+                                <N></N>
+                                <P valtype="e3d:PDXML">
+                                  <E>
+                                    <Category>General</Category>
+                                    <Description></Description>
+                                    <Name>0</Name>
+                                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                                  </E>
+                                </P>
+                                <PB>
+                                  <KT>System.String</KT>
+                                  <VT>System.Object</VT>
+                                  <C>
+                                    <E>
+                                      <K>0</K>
+                                      <V xsi:type="e3d:ScriptingObject">
+                                        <N></N>
+                                        <P valtype="e3d:PDXML">
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Position</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Point</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Size</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Size</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Mirror</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:Boolean</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Rail</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:double</Type>
+                                          </E>
+                                        </P>
+                                        <PB>
+                                          <KT>System.String</KT>
+                                          <VT>System.Object</VT>
+                                          <C>
+                                            <E>
+                                              <K>Mirror</K>
+                                              <V xsi:type="xsd:Boolean">0</V>
+                                            </E>
+                                            <E>
+                                              <K>Position</K>
+                                              <V xsi:type="System.Windows.Point">
+                                                <X>50</X>
+                                                <Y>0</Y>
+                                              </V>
+                                            </E>
+                                            <E>
+                                              <K>Rail</K>
+                                              <V xsi:type="xsd:double">-1</V>
+                                            </E>
+                                            <E>
+                                              <K>Size</K>
+                                              <V xsi:type="System.Windows.Size">
+                                                <Height>0</Height>
+                                                <Width>0</Width>
+                                              </V>
+                                            </E>
+                                          </C>
+                                        </PB>
+                                      </V>
+                                    </E>
+                                  </C>
+                                </PB>
+                              </V>
+                            </E>
+                            <E>
+                              <K>R_NO1</K>
+                              <V xsi:type="e3d:ScriptingObject">
+                                <N></N>
+                                <P valtype="e3d:PDXML">
+                                  <E>
+                                    <Category>General</Category>
+                                    <Description></Description>
+                                    <Name>0</Name>
+                                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                                  </E>
+                                </P>
+                                <PB>
+                                  <KT>System.String</KT>
+                                  <VT>System.Object</VT>
+                                  <C>
+                                    <E>
+                                      <K>0</K>
+                                      <V xsi:type="e3d:ScriptingObject">
+                                        <N></N>
+                                        <P valtype="e3d:PDXML">
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Position</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Point</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Size</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Size</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Mirror</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:Boolean</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Rail</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:double</Type>
+                                          </E>
+                                        </P>
+                                        <PB>
+                                          <KT>System.String</KT>
+                                          <VT>System.Object</VT>
+                                          <C>
+                                            <E>
+                                              <K>Mirror</K>
+                                              <V xsi:type="xsd:Boolean">0</V>
+                                            </E>
+                                            <E>
+                                              <K>Position</K>
+                                              <V xsi:type="System.Windows.Point">
+                                                <X>0</X>
+                                                <Y>20</Y>
+                                              </V>
+                                            </E>
+                                            <E>
+                                              <K>Rail</K>
+                                              <V xsi:type="xsd:double">-1</V>
+                                            </E>
+                                            <E>
+                                              <K>Size</K>
+                                              <V xsi:type="System.Windows.Size">
+                                                <Height>20</Height>
+                                                <Width>80</Width>
+                                              </V>
+                                            </E>
+                                          </C>
+                                        </PB>
+                                      </V>
+                                    </E>
+                                  </C>
+                                </PB>
+                              </V>
+                            </E>
+                            <E>
+                              <K>W_NO1</K>
+                              <V xsi:type="e3d:ScriptingObject">
+                                <N></N>
+                                <P valtype="e3d:PDXML">
+                                  <E>
+                                    <Category>General</Category>
+                                    <Description></Description>
+                                    <Name>0</Name>
+                                    <Type xsi:type="System.RuntimeType">e3d:ScriptingObject</Type>
+                                  </E>
+                                </P>
+                                <PB>
+                                  <KT>System.String</KT>
+                                  <VT>System.Object</VT>
+                                  <C>
+                                    <E>
+                                      <K>0</K>
+                                      <V xsi:type="e3d:ScriptingObject">
+                                        <N></N>
+                                        <P valtype="e3d:PDXML">
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Position</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Point</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Size</Name>
+                                            <Type xsi:type="System.RuntimeType">System.Windows.Size</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Mirror</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:Boolean</Type>
+                                          </E>
+                                          <E>
+                                            <Category>General</Category>
+                                            <Description></Description>
+                                            <Name>Rail</Name>
+                                            <Type xsi:type="System.RuntimeType">xsd:double</Type>
+                                          </E>
+                                        </P>
+                                        <PB>
+                                          <KT>System.String</KT>
+                                          <VT>System.Object</VT>
+                                          <C>
+                                            <E>
+                                              <K>Mirror</K>
+                                              <V xsi:type="xsd:Boolean">0</V>
+                                            </E>
+                                            <E>
+                                              <K>Position</K>
+                                              <V xsi:type="System.Windows.Point">
+                                                <X>0</X>
+                                                <Y>20</Y>
+                                              </V>
+                                            </E>
+                                            <E>
+                                              <K>Rail</K>
+                                              <V xsi:type="xsd:double">1</V>
+                                            </E>
+                                            <E>
+                                              <K>Size</K>
+                                              <V xsi:type="System.Windows.Size">
+                                                <Height>20</Height>
+                                                <Width>80</Width>
+                                              </V>
+                                            </E>
+                                          </C>
+                                        </PB>
+                                      </V>
+                                    </E>
+                                  </C>
+                                </PB>
+                              </V>
+                            </E>
+                          </C>
+                        </PB>
+                      </V>
+                    </E>
+                  </C>
+                </PB>
+              </Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>EStopNotPressed</Name>
+              <Description>EStop button not pressed</Description>
+              <ReadOnly>1</ReadOnly>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-State - Button</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>EStopPressed</Name>
+              <Description>EStop button pressed</Description>
+              <ReadOnly>1</ReadOnly>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-State - Button</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>MomentaryTimeout</Name>
+              <Description>EStop button momentary timeout time</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Button</Category>
+              <Type>e3d:TimeProperty</Type>
+              <Value xsi:type="e3d:TimeProperty">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>NCContacts</Name>
+              <Description>Number of normally closed contacts</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Contacts</Category>
+              <Type>xsd:byte</Type>
+              <Value xsi:type="xsd:byte">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>NOContacts</Name>
+              <Description>Number of normally open contacts</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Contacts</Category>
+              <Type>xsd:byte</Type>
+              <Value xsi:type="xsd:byte">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>PushSpeed</Name>
+              <Description>EStop button push speed</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Button</Category>
+              <Type>e3d:SpeedProperty</Type>
+              <Value xsi:type="e3d:SpeedProperty">0.3</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>R_LightPower</Name>
+              <Description>EStop button light power</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Wiring In</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>R_NO1</Name>
+              <Description>Normally Open 1 Wiring In</Description>
+              <Category>-Wiring In</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>SelfLightingOutput</Name>
+              <Description>Self lighting output property</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Light</Category>
+              <Type>e3d:CustomEnumeration</Type>
+              <Value xsi:type="e3d:CustomEnumeration">
+                <V>None</V>
+                <A>
+                  <e xsi:type="xsd:string">None</e>
+                  <e xsi:type="xsd:string">EStopPressed</e>
+                  <e xsi:type="xsd:string">EStopNotPressed</e>
+                  <e xsi:type="xsd:string">W_NO1</e>
+                </A>
+              </Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>ShowNametag</Name>
+              <Description>Show nametag</Description>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>Version</Name>
+              <Description>Version</Description>
+              <ReadOnly>1</ReadOnly>
+              <CS>
+                <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
+              </CS>
+              <Category>-About</Category>
+              <Type>xsd:string</Type>
+              <Value xsi:type="xsd:string">1.8.1.0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>W_NO1</Name>
+              <Description>Normally Open 1 Wiring Out</Description>
+              <ReadOnly>1</ReadOnly>
+              <Category>-Wiring Out</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+          </CP>
+        </CustomProperties>
+        <Depth>0.002</Depth>
+        <ExtraMaterials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-9868951</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-1</Diffuse>
+            </e>
+          </MeshMaterials>
+        </ExtraMaterials>
+        <FrictionMaterial>
+          <Name>Corrugated</Name>
+        </FrictionMaterial>
+        <Height>0.049</Height>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-5376</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NativeTypeName>Demo3D.Components._3DControlPanels.EStop</NativeTypeName>
+        <NewNameExpr>
+          <E>"ESTOP"+ID</E>
+        </NewNameExpr>
+        <ScriptKey>
+          <Id>e6845388-c185-4e5f-abbb-b8b4ccc11a27</Id>
+        </ScriptKey>
+        <ShowControlPoints>0</ShowControlPoints>
+        <SimpleProperties>
+          <Aliases>
+            <e xsi:type="e3d:Alias">
+              <Alias>Name</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Name</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Draggable</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Draggable</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Select Parent When Picked </Alias>
+              <Path>
+                <e xsi:type="xsd:string">SelectParentWhenPicked</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Parent</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Parent</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>NOContacts</Alias>
+              <Path>
+                <e xsi:type="xsd:string">NOContacts</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>ConnectorEnabled</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ConnectorEnabled</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>NCContacts</Alias>
+              <Path>
+                <e xsi:type="xsd:string">NCContacts</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>DiagramInformation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">DiagramInformation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Version</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Version</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>PushSpeed</Alias>
+              <Path>
+                <e xsi:type="xsd:string">PushSpeed</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>ButtonType</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ButtonType</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>TextDescription</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">TextDescription</e>
+                <e xsi:type="xsd:string">Text</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>R_NO1</Alias>
+              <Path>
+                <e xsi:type="xsd:string">R_NO1</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>W_NO1</Alias>
+              <Path>
+                <e xsi:type="xsd:string">W_NO1</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>ShowNametag</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ShowNametag</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Type</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Type</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>EStopPressed</Alias>
+              <Path>
+                <e xsi:type="xsd:string">EStopPressed</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>R_LightPower</Alias>
+              <Path>
+                <e xsi:type="xsd:string">R_LightPower</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>CalculateOffColor</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">MushroomBase</e>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">Mushroom</e>
+                <e xsi:type="xsd:string">CalculateOffColor</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>OffColor</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">MushroomBase</e>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">Mushroom</e>
+                <e xsi:type="xsd:string">OffColor</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>OnColor</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">MushroomBase</e>
+                <e xsi:type="xsd:string">ChildrenProperties</e>
+                <e xsi:type="xsd:string">Mushroom</e>
+                <e xsi:type="xsd:string">OnColor</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>SelfLightingOutput</Alias>
+              <Path>
+                <e xsi:type="xsd:string">SelfLightingOutput</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>EStopNotPressed</Alias>
+              <Path>
+                <e xsi:type="xsd:string">EStopNotPressed</e>
+              </Path>
+            </e>
+          </Aliases>
+        </SimpleProperties>
+        <Type>EStop</Type>
+        <Width>0.049</Width>
+      </P>
+      <CN>
+        <e>
+          <Name>C1</Name>
+          <Start>||0.001</Start>
+          <End>-1E-05||0.001</End>
+          <Normal>||1</Normal>
+          <Parent>4a705f94-840c-4d3d-bfe5-5f18459652fd</Parent>
+          <STE>1</STE>
+          <T>PanelComponent</T>
+          <ALWD>
+            <e>Panel</e>
+          </ALWD>
+          <CPS>0.0049</CPS>
+          <SnapDistance>0.049</SnapDistance>
+          <R>1</R>
+          <MXAC>1</MXAC>
+          <TextHeight>0.0049</TextHeight>
+        </e>
+      </CN>
+    </V>
+    <V Name="TextDescription" Parent="4a705f94-840c-4d3d-bfe5-5f18459652fd" xsi:type="e3d:TextVisual">
+      <LR>|0.0161|-0.0013|||</LR>
+      <Id>67420e98-d82a-4949-b2cf-e3a8e7737b92</Id>
+      <P xsi:type="e3d:TextProperties">
+        <CastsShadow>0</CastsShadow>
+        <Depth>0</Depth>
+        <Draggable>0</Draggable>
+        <LineHeight>0.005</LineHeight>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-16777216</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Text"+ID</E>
+        </NewNameExpr>
+        <SelectParentWhenPicked>1</SelectParentWhenPicked>
+        <ShowControlPoints>0</ShowControlPoints>
+        <SimpleProperties>
+          <Aliases>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Text</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Text</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Height</Alias>
+              <Path>
+                <e xsi:type="xsd:string">LineHeight</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Font</Alias>
+              <Path>
+                <e xsi:type="xsd:string">FontFamily</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Bold</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Bold</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Italic</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Italic</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Color</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Material</e>
+                <e xsi:type="xsd:string">Color</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Draggable</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Draggable</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Select Parent When Picked </Alias>
+              <Path>
+                <e xsi:type="xsd:string">SelectParentWhenPicked</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Horizontal Align</Alias>
+              <Path>
+                <e xsi:type="xsd:string">HorizontalAlign</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Vertical Align</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VerticalAlign</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Full Name</Alias>
+              <Path>
+                <e xsi:type="xsd:string">FullName</e>
+              </Path>
+            </e>
+          </Aliases>
+        </SimpleProperties>
+        <Text>DESCRIPTION</Text>
+        <Type>TextVisual</Type>
+        <VerticalAlign xsi:type="e3d:VAlign">Center</VerticalAlign>
+      </P>
+    </V>
+    <V Name="MushroomBase" Parent="4a705f94-840c-4d3d-bfe5-5f18459652fd" xsi:type="e3d:CylinderVisual">
+      <LR>|-0.0035|-0.0061|-1.570796|-3.141592|3.141592</LR>
+      <ILR>|-0.003571421|-0.005271429|-1.570796|-3.141592|3.141592</ILR>
+      <Id>70ec7fca-6238-470f-89db-28e0166cce69</Id>
+      <P xsi:type="e3d:CylinderProperties">
+        <Draggable>0</Draggable>
+        <ExtraMaterials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-2894893</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-5658199</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-9868951</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-16777216</Diffuse>
+            </e>
+          </MeshMaterials>
+        </ExtraMaterials>
+        <Length>0.008571428571428572</Length>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-10223616</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"ButtonBase"+ID</E>
+        </NewNameExpr>
+        <Radius>0.00892857142857143</Radius>
+        <SelectParentWhenPicked>1</SelectParentWhenPicked>
+        <ShowControlPoints>0</ShowControlPoints>
+        <SimpleProperties>
+          <Aliases>
+            <e xsi:type="e3d:Alias">
+              <Alias>Name</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Name</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Length</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Length</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Color</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Material</e>
+                <e xsi:type="xsd:string">Color</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Parent</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Parent</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Draggable</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Draggable</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Select Parent When Picked </Alias>
+              <Path>
+                <e xsi:type="xsd:string">SelectParentWhenPicked</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Diameter</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Diameter</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Inner Diameter</Alias>
+              <Path>
+                <e xsi:type="xsd:string">InnerDiameter</e>
+              </Path>
+            </e>
+          </Aliases>
+        </SimpleProperties>
+        <Type>ButtonBase</Type>
+      </P>
+    </V>
+    <V Name="Mushroom" Parent="70ec7fca-6238-470f-89db-28e0166cce69" xsi:type="e3d:CylinderVisual">
+      <LR>|0.007142857||||-3.141592</LR>
+      <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+      <P xsi:type="e3d:CylinderProperties">
+        <ConeRatio>0.8</ConeRatio>
+        <CustomProperties>
+          <CP>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>CalculateOffColor</Name>
+              <Description>Calculate off color</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Light</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>ConnectorEnabled</Name>
+              <Description>Connector enabled and visible</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Connector</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>NametagHorizontalOffset</Name>
+              <Description>Nametag horizontal offset</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>e3d:DistanceProperty</Type>
+              <Value xsi:type="e3d:DistanceProperty">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>NametagVerticalOffset</Name>
+              <Description>Nametag vertical offset</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>e3d:DistanceProperty</Type>
+              <Value xsi:type="e3d:DistanceProperty">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>OffColor</Name>
+              <Description>Off color</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Light</Category>
+              <Type>e3d:Color</Type>
+              <Value xsi:type="e3d:Color">-10223616</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>OnColor</Name>
+              <Description>On color</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Light</Category>
+              <Type>e3d:Color</Type>
+              <Value xsi:type="e3d:Color">
+                <name>Red</name>
+              </Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>R_LightPower</Name>
+              <Description>Light power</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Wiring In</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>ShowNametag</Name>
+              <Description>Show nametag</Description>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>Version</Name>
+              <Description>Version</Description>
+              <ReadOnly>1</ReadOnly>
+              <CS>
+                <Id>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Id>
+              </CS>
+              <Category>-About</Category>
+              <Type>xsd:string</Type>
+              <Value xsi:type="xsd:string">1.8.1.0</Value>
+            </e>
+          </CP>
+        </CustomProperties>
+        <Draggable>0</Draggable>
+        <ExtraMaterials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-2894893</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-5658199</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-9868951</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-16777216</Diffuse>
+            </e>
+          </MeshMaterials>
+        </ExtraMaterials>
+        <Length>0.005714285714285714</Length>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-10223616</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NativeTypeName>Demo3D.Components._3DControlPanels.RoundLight</NativeTypeName>
+        <NewNameExpr>
+          <E>"ButtonMushroom"+ID</E>
+        </NewNameExpr>
+        <Radius>0.014285714285714287</Radius>
+        <ScriptKey>
+          <Id>e6845388-c185-4e5f-abbb-b8b4ccc11a27</Id>
+        </ScriptKey>
+        <SelectParentWhenPicked>1</SelectParentWhenPicked>
+        <ShowControlPoints>0</ShowControlPoints>
+        <SimpleProperties>
+          <Aliases>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Length</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Length</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Color</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Material</e>
+                <e xsi:type="xsd:string">Color</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Diameter</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Diameter</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Draggable</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Draggable</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Select Parent When Picked </Alias>
+              <Path>
+                <e xsi:type="xsd:string">SelectParentWhenPicked</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Show Control Points</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ShowControlPoints</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Full Name</Alias>
+              <Path>
+                <e xsi:type="xsd:string">FullName</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Version</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Version</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>OnColor</Alias>
+              <Path>
+                <e xsi:type="xsd:string">OnColor</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>OffColor</Alias>
+              <Path>
+                <e xsi:type="xsd:string">OffColor</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>CalculateOffColor</Alias>
+              <Path>
+                <e xsi:type="xsd:string">CalculateOffColor</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>ShowNametag</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ShowNametag</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>ConnectorEnabled</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ConnectorEnabled</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>NametagHorizontalOffset</Alias>
+              <Path>
+                <e xsi:type="xsd:string">NametagHorizontalOffset</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>NametagVerticalOffset</Alias>
+              <Path>
+                <e xsi:type="xsd:string">NametagVerticalOffset</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>R_LightPower</Alias>
+              <Path>
+                <e xsi:type="xsd:string">R_LightPower</e>
+              </Path>
+            </e>
+          </Aliases>
+        </SimpleProperties>
+        <Type>ButtonMushroom</Type>
+      </P>
+      <CN>
+        <e>
+          <Name>C1</Name>
+          <Start>-1E-05|0.0028571428|</Start>
+          <End>|0.0028571428|</End>
+          <Normal>|1|</Normal>
+          <Parent>904d55a0-0220-4d7d-9be9-1d23b6fcc619</Parent>
+          <STE>1</STE>
+          <T>PanelComponent</T>
+          <ALWD>
+            <e>Panel</e>
+          </ALWD>
+          <Enabled>0</Enabled>
+          <CPE>0</CPE>
+          <CPS>0.0028571428571428576</CPS>
+          <SnapDistance>0.028571428571428574</SnapDistance>
+          <R>1</R>
+          <MXAC>1</MXAC>
+          <TextHeight>0.0028571428571428576</TextHeight>
+        </e>
+      </CN>
+    </V>
+    <V Name="Nametag" Parent="4a705f94-840c-4d3d-bfe5-5f18459652fd" xsi:type="e3d:TextVisual">
+      <LR>|-0.0214|-0.0013|||</LR>
+      <Id>adb221a7-01c5-4052-b59c-ee715bf151be</Id>
+      <P xsi:type="e3d:TextProperties">
+        <CastsShadow>0</CastsShadow>
+        <CustomProperties>
+          <CP>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>AncestorLevel</Name>
+              <Description>Nametag ancestor level
+0 = yourself
+1 = your parent
+2 = your parent's parent
+3...  higher ancestor levels</Description>
+              <CS>
+                <Id>adb221a7-01c5-4052-b59c-ee715bf151be</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>xsd:byte</Type>
+              <Value xsi:type="xsd:byte">1</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>ConnectorEnabled</Name>
+              <Description>Connector enabled and visible</Description>
+              <CS>
+                <Id>adb221a7-01c5-4052-b59c-ee715bf151be</Id>
+              </CS>
+              <Category>-Configuration - Connector</Category>
+              <Type>xsd:Boolean</Type>
+              <Value xsi:type="xsd:Boolean">0</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>DisplayProperty</Name>
+              <Description>Nametag display property (Name, Type, or Custom)</Description>
+              <CS>
+                <Id>adb221a7-01c5-4052-b59c-ee715bf151be</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>Demo3D.Components._3DControlPanels.Nametag+eDisplayProperty</Type>
+              <Value xsi:type="Demo3D.Components._3DControlPanels.Nametag+eDisplayProperty">Name</Value>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>DisplayPropertyName</Name>
+              <Description>Display property name</Description>
+              <Hidden>1</Hidden>
+              <CS>
+                <Id>adb221a7-01c5-4052-b59c-ee715bf151be</Id>
+              </CS>
+              <Category>-Configuration - Nametag</Category>
+              <Type>xsd:string</Type>
+            </e>
+            <e xsi:type="e3d:CustomProperty">
+              <Name>Version</Name>
+              <Description>Version</Description>
+              <ReadOnly>1</ReadOnly>
+              <CS>
+                <Id>adb221a7-01c5-4052-b59c-ee715bf151be</Id>
+              </CS>
+              <Category>-About</Category>
+              <Type>xsd:string</Type>
+              <Value xsi:type="xsd:string">1.8.1.0</Value>
+            </e>
+          </CP>
+        </CustomProperties>
+        <Depth>0</Depth>
+        <Draggable>0</Draggable>
+        <LineHeight>0.004285714285714286</LineHeight>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-16777216</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NativeTypeName>Demo3D.Components._3DControlPanels.Nametag</NativeTypeName>
+        <NewNameExpr>
+          <E>"Nametag"+ID</E>
+        </NewNameExpr>
+        <ScriptKey>
+          <Id>e6845388-c185-4e5f-abbb-b8b4ccc11a27</Id>
+        </ScriptKey>
+        <SelectParentWhenPicked>1</SelectParentWhenPicked>
+        <ShowControlPoints>0</ShowControlPoints>
+        <SimpleProperties>
+          <Aliases>
+            <e xsi:type="e3d:Alias">
+              <Alias>Name</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Name</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Text</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Text</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Height</Alias>
+              <Path>
+                <e xsi:type="xsd:string">LineHeight</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Depth</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Depth</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Font</Alias>
+              <Path>
+                <e xsi:type="xsd:string">FontFamily</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Bold</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Bold</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Italic</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Italic</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Color</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Material</e>
+                <e xsi:type="xsd:string">Color</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Parent</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Parent</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Draggable</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Draggable</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Select Parent When Picked </Alias>
+              <Path>
+                <e xsi:type="xsd:string">SelectParentWhenPicked</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>AncestorLevel</Alias>
+              <Path>
+                <e xsi:type="xsd:string">AncestorLevel</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Vertical Align</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VerticalAlign</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Horizontal Align</Alias>
+              <Path>
+                <e xsi:type="xsd:string">HorizontalAlign</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>ConnectorEnabled</Alias>
+              <Path>
+                <e xsi:type="xsd:string">ConnectorEnabled</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Version</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Version</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>DisplayProperty</Alias>
+              <Path>
+                <e xsi:type="xsd:string">DisplayProperty</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Type</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Type</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>DisplayPropertyName</Alias>
+              <Path>
+                <e xsi:type="xsd:string">DisplayPropertyName</e>
+              </Path>
+            </e>
+          </Aliases>
+        </SimpleProperties>
+        <Text>ESTOP1</Text>
+        <Type>Nametag</Type>
+        <VerticalAlign xsi:type="e3d:VAlign">Center</VerticalAlign>
+      </P>
+      <CN>
+        <e>
+          <Name>C1</Name>
+          <Start>||0.0001</Start>
+          <End>-1E-05||0.0001</End>
+          <Normal>||1</Normal>
+          <Parent>adb221a7-01c5-4052-b59c-ee715bf151be</Parent>
+          <STE>1</STE>
+          <T>PanelComponent</T>
+          <ALWD>
+            <e>Panel</e>
+          </ALWD>
+          <Enabled>0</Enabled>
+          <CPE>0</CPE>
+          <CPS>0.0004285714285714286</CPS>
+          <SnapDistance>0.004285714285714286</SnapDistance>
+          <R>1</R>
+          <MXAC>1</MXAC>
+          <TextHeight>0.0004285714285714286</TextHeight>
+        </e>
+      </CN>
     </V>
     <V Name="Light1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:LightVisual">
       <LR>-1|3.4641016|-1.7320508|1.0471976|0.5235988|</LR>
@@ -410,30 +2075,6 @@
         <Visible>0</Visible>
       </P>
     </V>
-    <V Name="Container1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:ContainerVisual">
-      <LR>-6.6376143|0.15|-5.555253|||</LR>
-      <Id>c1269652-848b-4a57-a6bc-c641f19c7365</Id>
-      <P xsi:type="e3d:ContainerProperties">
-        <BaseRatio>0.9</BaseRatio>
-        <CollisionType xsi:type="e3d:PhysicsCollisionType">TriMesh</CollisionType>
-        <Depth>0.4</Depth>
-        <FrictionMaterial>
-          <Name>Plastic</Name>
-        </FrictionMaterial>
-        <Height>0.3</Height>
-        <Material>
-          <MeshMaterial xsi:type="e3d:MeshMaterial">
-            <Diffuse>-1120086</Diffuse>
-          </MeshMaterial>
-        </Material>
-        <NewNameExpr>
-          <E>"Container"+ID</E>
-        </NewNameExpr>
-        <Thickness>0.01</Thickness>
-        <Type>Container</Type>
-        <Width>0.5</Width>
-      </P>
-    </V>
     <V Name="BoxTube1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxTubeVisual">
       <LR>1.0090411|0.5|-2.4436393|||</LR>
       <Id>c2469fa0-e65f-458d-80c1-07ee6cbb3094</Id>
@@ -485,6 +2126,171 @@
         </OuterMaterial>
         <StyleSetName>BoxTubeVisual</StyleSetName>
         <Type>BoxTube</Type>
+      </P>
+    </V>
+    <V Name="TurntableConveyor1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:TurntableConveyor">
+      <LR>1.7243707|0.83|-6.446398|||</LR>
+      <Id>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Id>
+      <P xsi:type="e3d:TurntableConveyorProperties">
+        <BillOfMaterialsCodeExpr>
+          <E>Owner.Name</E>
+        </BillOfMaterialsCodeExpr>
+        <BillOfMaterialsDescriptionExpr>
+          <E>Owner.Type</E>
+        </BillOfMaterialsDescriptionExpr>
+        <CenterDiameter>0.08</CenterDiameter>
+        <FrictionMaterial>
+          <Name>Steel</Name>
+        </FrictionMaterial>
+        <IsRotateMotorOn>0</IsRotateMotorOn>
+        <LeftSide xsi:type="e3d:ConveyorSideProperties">
+          <FrictionMaterial>
+            <Name>Steel</Name>
+          </FrictionMaterial>
+          <Height>0.176</Height>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-256</Diffuse>
+            </MeshMaterial>
+          </Material>
+          <Step>0.043</Step>
+          <Width>0.0545</Width>
+        </LeftSide>
+        <Length>1.71</Length>
+        <Motor xsi:type="e3d:ConveyorMotorProperties">
+          <CurrentSpeed>0.5</CurrentSpeed>
+          <Speed>
+            <E>0.5</E>
+          </Speed>
+          <StartSpeed>0.5</StartSpeed>
+        </Motor>
+        <MotorVisual>
+          <Type>e3d:ConveyorVisual</Type>
+        </MotorVisual>
+        <NewNameExpr>
+          <E>"TurntableConveyor"+ID</E>
+        </NewNameExpr>
+        <RightSide xsi:type="e3d:ConveyorSideProperties">
+          <FrictionMaterial>
+            <Name>Steel</Name>
+          </FrictionMaterial>
+          <Height>0.176</Height>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-256</Diffuse>
+            </MeshMaterial>
+          </Material>
+          <Step>0.043</Step>
+          <Width>0.0545</Width>
+        </RightSide>
+        <RollerColor>
+          <name>Silver</name>
+        </RollerColor>
+        <RollerCount>9</RollerCount>
+        <RollerDiameter>0.08</RollerDiameter>
+        <RollerPitch>0.19</RollerPitch>
+        <RollerWidth>0.8</RollerWidth>
+        <RotateAxis>|1|</RotateAxis>
+        <RotateMotorSpeed>0</RotateMotorSpeed>
+        <SurfaceMaterial>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-4144960</Diffuse>
+          </MeshMaterial>
+        </SurfaceMaterial>
+        <SurfaceSideMaterial>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-4144960</Diffuse>
+          </MeshMaterial>
+        </SurfaceSideMaterial>
+        <TargetPosition>0</TargetPosition>
+        <ToolTipExpr>
+          <E>Owner.Name+' Pos='+Format('0.###',Position)+' Offset='+Format('0.###',Offset)</E>
+        </ToolTipExpr>
+        <Type>Turntable Conveyor</Type>
+        <Width>0.8</Width>
+      </P>
+      <CN>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>Start</Name>
+          <Start />
+          <End />
+          <Normal>-1||</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>End</Name>
+          <Start>1.71||</Start>
+          <End>1.71||</End>
+          <Normal>1||</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C45</Name>
+          <Start>0.25042373||0.6045763</Start>
+          <End>0.25042373||0.6045763</End>
+          <Normal>-0.70710677||0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C225</Name>
+          <Start>1.4595764||-0.6045763</Start>
+          <End>1.4595764||-0.6045763</End>
+          <Normal>0.70710677||-0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C90</Name>
+          <Start>0.855||0.855</Start>
+          <End>0.855||0.855</End>
+          <Normal>||1</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C270</Name>
+          <Start>0.855||-0.855</Start>
+          <End>0.855||-0.855</End>
+          <Normal>||-1</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C135</Name>
+          <Start>1.4595764||0.6045763</Start>
+          <End>1.4595764||0.6045763</End>
+          <Normal>0.70710677||0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+        <e xsi:type="e3d:ConveyorConnector">
+          <Name>C315</Name>
+          <Start>0.25042373||-0.6045763</Start>
+          <End>0.25042373||-0.6045763</End>
+          <Normal>-0.70710677||-0.70710677</Normal>
+          <Parent>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Parent>
+          <STE>1</STE>
+        </e>
+      </CN>
+    </V>
+    <V Name="Sphere1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:SphereVisual">
+      <LR>-1.9549124|0.5|-7.4268093|||</LR>
+      <Id>de07fdca-516d-4285-8715-b368ed000d0a</Id>
+      <P xsi:type="e3d:SphereProperties">
+        <Color>-989556</Color>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-989556</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Sphere"+ID</E>
+        </NewNameExpr>
+        <Radius>0.5</Radius>
+        <Type>Sphere</Type>
       </P>
     </V>
   </Visuals>
@@ -709,4 +2515,17 @@
     </E>
   </e3d:WebConfigurationServices>
   <FileFormat>2</FileFormat>
+  <e3d:SerializedObjects valtype="e3d:SerializableObject">
+    <E xsi:type="e3d:DocumentPackages">
+      <Id>c6e0d84c-c8a8-42aa-8edf-e23f8af0dbaf</Id>
+      <PackageDependencies valtype="e3d:PackageDependency">
+        <E>
+          <Name>Emulate3D._3DControlPanelsFramework</Name>
+          <Version>
+            <Version>&gt;=1.8.1</Version>
+          </Version>
+        </E>
+      </PackageDependencies>
+    </E>
+  </e3d:SerializedObjects>
 </e3d:Model>
