@@ -96,6 +96,37 @@
         <Width>1</Width>
       </P>
     </V>
+    <V Name="Box4" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxVisual">
+      <LR>1.8784504|0.50000095|-14.284233|||</LR>
+      <Id>3d2616c6-d545-4ac4-981b-97bf4d2da0f7</Id>
+      <P xsi:type="e3d:BoxProperties">
+        <Depth>1</Depth>
+        <ExtraMaterials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-9868951</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-1</Diffuse>
+            </e>
+          </MeshMaterials>
+        </ExtraMaterials>
+        <FrictionMaterial>
+          <Name>Corrugated</Name>
+        </FrictionMaterial>
+        <Height>1</Height>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-663885</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Box"+ID</E>
+        </NewNameExpr>
+        <Type>Box</Type>
+        <Width>1</Width>
+      </P>
+    </V>
     <V Name="ESTOP1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxVisual">
       <LR>1.13377|0.3|-8.581909|||</LR>
       <Id>4a705f94-840c-4d3d-bfe5-5f18459652fd</Id>
