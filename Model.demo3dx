@@ -39,6 +39,24 @@
       </P>
       <IgnoreFrictionConfiguration>1</IgnoreFrictionConfiguration>
     </V>
+    <V Name="Text1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:TextVisual">
+      <LR>-3.1959965||-3.9080646|||</LR>
+      <Id>0c599a95-c29f-4a97-928a-e2f493c073c1</Id>
+      <P xsi:type="e3d:TextProperties">
+        <CastsShadow>0</CastsShadow>
+        <LineHeight>1</LineHeight>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-16777216</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Text"+ID</E>
+        </NewNameExpr>
+        <Text>Im soo tired</Text>
+        <Type>TextVisual</Type>
+      </P>
+    </V>
     <V Name="Light1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:LightVisual">
       <LR>-1|3.4641016|-1.7320508|1.0471976|0.5235988|</LR>
       <ILR>|||||</ILR>
