@@ -1,11 +1,11 @@
 <e3d:Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:e3d="uri://emulate3d.com">
   <e3d:Header>
-    <Version>19.1.0.53</Version>
+    <Version>19.2.0.74</Version>
     <Id>e583e7ea-c9a6-4a57-a772-0d2eae8a04e7</Id>
   </e3d:Header>
   <Resources>
     <MeshLibrary>
-      <Mesh Key="6c1b393f-a043-46ab-90d2-13c183848098" />
+      <Mesh Key="6c1b393f-a043-46ab-90d2-13c183848098" IsEncrypted="False" />
     </MeshLibrary>
     <TextureLibrary>
       <Texture Key="58de2801-b69a-4d49-ade2-bfed7e7887d0" Name="tmpnumgsp" />
@@ -76,6 +76,37 @@
         <Material>
           <MeshMaterial xsi:type="e3d:MeshMaterial">
             <Diffuse>-4144960</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Box"+ID</E>
+        </NewNameExpr>
+        <Type>Box</Type>
+        <Width>1</Width>
+      </P>
+    </V>
+    <V Name="Box2" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxVisual">
+      <LR>2.8140864|0.5|-1.6270494|||</LR>
+      <Id>b481738c-c728-48a0-8535-4fd8566a7cc1</Id>
+      <P xsi:type="e3d:BoxProperties">
+        <Depth>1</Depth>
+        <ExtraMaterials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-9868951</Diffuse>
+            </e>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-1</Diffuse>
+            </e>
+          </MeshMaterials>
+        </ExtraMaterials>
+        <FrictionMaterial>
+          <Name>Corrugated</Name>
+        </FrictionMaterial>
+        <Height>1</Height>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-7650029</Diffuse>
           </MeshMaterial>
         </Material>
         <NewNameExpr>
@@ -369,7 +400,158 @@
   <TelegramFormats valtype="e3d:TelegramFormat" />
   <TelegramSymbols valtype="e3d:TelegramSymbolSerializer" />
   <IOBrowserConfiguration>
-    <GridConfigurations valtype="e3d:GridConfiguration" />
+    <GridConfigurations valtype="e3d:GridConfiguration">
+      <E>
+        <Name>MainGrid</Name>
+        <StandardColumns valtype="e3d:StandardColumn">
+          <E>
+            <Name>Active</Name>
+            <Visible>1</Visible>
+            <Position>0</Position>
+          </E>
+          <E>
+            <Name>Address</Name>
+            <Visible>1</Visible>
+            <Position>1</Position>
+          </E>
+          <E>
+            <Name>Name</Name>
+            <Visible>1</Visible>
+            <Position>2</Position>
+          </E>
+          <E>
+            <Name>Type</Name>
+            <Visible>0</Visible>
+            <Position>3</Position>
+          </E>
+          <E>
+            <Name>Server</Name>
+            <Visible>0</Visible>
+            <Position>4</Position>
+          </E>
+          <E>
+            <Name>ServerValue</Name>
+            <Visible>1</Visible>
+            <Position>5</Position>
+          </E>
+          <E>
+            <Name>ModelValue</Name>
+            <Visible>1</Visible>
+            <Position>6</Position>
+          </E>
+          <E>
+            <Name>Description</Name>
+            <Visible>0</Visible>
+            <Position>7</Position>
+          </E>
+          <E>
+            <Name>Access</Name>
+            <Visible>1</Visible>
+            <Position>8</Position>
+          </E>
+          <E>
+            <Name>ScanRate</Name>
+            <Visible>0</Visible>
+            <Position>9</Position>
+          </E>
+          <E>
+            <Name>DisplayName</Name>
+            <Visible>0</Visible>
+            <Position>10</Position>
+          </E>
+          <E>
+            <Name>Visual</Name>
+            <Visible>1</Visible>
+            <Position>11</Position>
+          </E>
+          <E>
+            <Name>Property</Name>
+            <Visible>1</Visible>
+            <Position>12</Position>
+          </E>
+          <E>
+            <Name>Expression</Name>
+            <Visible>1</Visible>
+            <Position>13</Position>
+          </E>
+        </StandardColumns>
+      </E>
+      <E>
+        <Name>IOGrid</Name>
+        <StandardColumns valtype="e3d:StandardColumn">
+          <E>
+            <Name>Active</Name>
+            <Visible>1</Visible>
+            <Position>0</Position>
+          </E>
+          <E>
+            <Name>Address</Name>
+            <Visible>1</Visible>
+            <Position>1</Position>
+          </E>
+          <E>
+            <Name>Name</Name>
+            <Visible>1</Visible>
+            <Position>2</Position>
+          </E>
+          <E>
+            <Name>Type</Name>
+            <Visible>0</Visible>
+            <Position>3</Position>
+          </E>
+          <E>
+            <Name>Server</Name>
+            <Visible>0</Visible>
+            <Position>4</Position>
+          </E>
+          <E>
+            <Name>ServerValue</Name>
+            <Visible>1</Visible>
+            <Position>5</Position>
+          </E>
+          <E>
+            <Name>ModelValue</Name>
+            <Visible>1</Visible>
+            <Position>6</Position>
+          </E>
+          <E>
+            <Name>Description</Name>
+            <Visible>0</Visible>
+            <Position>7</Position>
+          </E>
+          <E>
+            <Name>Access</Name>
+            <Visible>1</Visible>
+            <Position>8</Position>
+          </E>
+          <E>
+            <Name>ScanRate</Name>
+            <Visible>0</Visible>
+            <Position>9</Position>
+          </E>
+          <E>
+            <Name>DisplayName</Name>
+            <Visible>0</Visible>
+            <Position>10</Position>
+          </E>
+          <E>
+            <Name>Visual</Name>
+            <Visible>1</Visible>
+            <Position>11</Position>
+          </E>
+          <E>
+            <Name>Property</Name>
+            <Visible>1</Visible>
+            <Position>12</Position>
+          </E>
+          <E>
+            <Name>Expression</Name>
+            <Visible>1</Visible>
+            <Position>13</Position>
+          </E>
+        </StandardColumns>
+      </E>
+    </GridConfigurations>
   </IOBrowserConfiguration>
   <CTRecordsConfiguration />
   <Fmus />
@@ -378,9 +560,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Default View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <Position>0.8742552|6.373604|-7.8305273</Position>
         <Target>0.6654391|0.07456589|0.076971054</Target>
       </val>
@@ -388,9 +567,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Front View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <Position>|1.5|-10</Position>
         <Target>|1.5|</Target>
       </val>
@@ -398,9 +574,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Plan View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <PlanView>1</PlanView>
         <Position>|5|</Position>
       </val>
@@ -408,9 +581,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Side View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <Position>-10|1.5|</Position>
         <Target>|1.5|</Target>
       </val>
