@@ -1,0 +1,41 @@
+{
+  "Key": {
+    "Key": "e6845388-c185-4e5f-abbb-b8b4ccc11a27",
+    "IsNull": false
+  },
+  "DefaultLicense": null,
+  "NativeSourcePaths": [
+    "_3DControlPanelsFramework.csproj",
+    "AssemblyInfo.cs",
+    "CircuitBreaker.cs",
+    "Disconnect.cs",
+    "EStop.cs",
+    "Horn.cs",
+    "Lamp.cs",
+    "LightCurtain.cs",
+    "Lock.cs",
+    "Nametag.cs",
+    "NativeObject.cs",
+    "NumberDisplay.cs",
+    "Panel.cs",
+    "PanelBoard.cs",
+    "PowerContactor.cs",
+    "PowerSupply.cs",
+    "PushButton.cs",
+    "RectangularLED.cs",
+    "RectangularLight.cs",
+    "Relay.cs",
+    "RoundLED.cs",
+    "RoundLight.cs",
+    "SafetyMat.cs",
+    "SelectorSwitch.cs",
+    "SphereLED.cs",
+    "SphereLight.cs",
+    "StackLight.cs",
+    "TextDisplay.cs",
+    "Utilities.cs",
+    "WiringActions.cs"
+  ],
+  "Created": "2020-04-20T17:34:19.2526233Z",
+  "Modified": "2026-09-17T13:48:00.0712353Z"
+}
