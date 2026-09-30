@@ -361,6 +361,59 @@
         <Visible>0</Visible>
       </P>
     </V>
+    <V Name="BoxTube1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxTubeVisual">
+      <LR>1.0090411|0.5|-2.4436393|||</LR>
+      <Id>c2469fa0-e65f-458d-80c1-07ee6cbb3094</Id>
+      <P xsi:type="e3d:BoxTubeProperties">
+        <CentreX>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-4144960</Diffuse>
+              <Reflectivity>0.05</Reflectivity>
+            </MeshMaterial>
+          </Material>
+        </CentreX>
+        <CentreZ>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-4144960</Diffuse>
+              <Reflectivity>0.05</Reflectivity>
+            </MeshMaterial>
+          </Material>
+        </CentreZ>
+        <CurveRadius>1</CurveRadius>
+        <EndYmax>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-4144960</Diffuse>
+              <Reflectivity>0.05</Reflectivity>
+            </MeshMaterial>
+          </Material>
+        </EndYmax>
+        <EndYmin>
+          <Material>
+            <MeshMaterial xsi:type="e3d:MeshMaterial">
+              <Diffuse>-4144960</Diffuse>
+              <Reflectivity>0.05</Reflectivity>
+            </MeshMaterial>
+          </Material>
+        </EndYmin>
+        <FrictionMaterial>
+          <Name>Corrugated</Name>
+        </FrictionMaterial>
+        <NewNameExpr>
+          <E>"BoxTube"+ID</E>
+        </NewNameExpr>
+        <OuterMaterial>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-4144960</Diffuse>
+            <Reflectivity>0.05</Reflectivity>
+          </MeshMaterial>
+        </OuterMaterial>
+        <StyleSetName>BoxTubeVisual</StyleSetName>
+        <Type>BoxTube</Type>
+      </P>
+    </V>
   </Visuals>
   <TagImporterPropertiesFile></TagImporterPropertiesFile>
   <TagConfigurationFolder>connections</TagConfigurationFolder>
