@@ -410,6 +410,30 @@
         <Visible>0</Visible>
       </P>
     </V>
+    <V Name="Container1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:ContainerVisual">
+      <LR>-4.9639807|0.15|-8.279244|||</LR>
+      <Id>c1269652-848b-4a57-a6bc-c641f19c7365</Id>
+      <P xsi:type="e3d:ContainerProperties">
+        <BaseRatio>0.9</BaseRatio>
+        <CollisionType xsi:type="e3d:PhysicsCollisionType">TriMesh</CollisionType>
+        <Depth>0.4</Depth>
+        <FrictionMaterial>
+          <Name>Plastic</Name>
+        </FrictionMaterial>
+        <Height>0.3</Height>
+        <Material>
+          <MeshMaterial xsi:type="e3d:MeshMaterial">
+            <Diffuse>-256</Diffuse>
+          </MeshMaterial>
+        </Material>
+        <NewNameExpr>
+          <E>"Container"+ID</E>
+        </NewNameExpr>
+        <Thickness>0.01</Thickness>
+        <Type>Container</Type>
+        <Width>0.5</Width>
+      </P>
+    </V>
     <V Name="BoxTube1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:BoxTubeVisual">
       <LR>1.0090411|0.5|-2.4436393|||</LR>
       <Id>c2469fa0-e65f-458d-80c1-07ee6cbb3094</Id>
