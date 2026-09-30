@@ -86,7 +86,7 @@
         <Height>1</Height>
         <Material>
           <MeshMaterial xsi:type="e3d:MeshMaterial">
-            <Diffuse>-16728065</Diffuse>
+            <Diffuse>-9807155</Diffuse>
           </MeshMaterial>
         </Material>
         <NewNameExpr>
