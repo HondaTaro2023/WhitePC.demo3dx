@@ -2159,6 +2159,132 @@
         <Type>BoxTube</Type>
       </P>
     </V>
+    <V Name="CardboardBox1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" IsLoad="True" xsi:type="e3d:ImportedMeshVisual">
+      <LR>-2.6143427|0.5|-11.595564||1.570796|</LR>
+      <ILR>-2.6143427|0.1999981|-11.595564||1.570796|</ILR>
+      <Id>cbc029ac-3d62-4cb4-9d76-d22cd69628d0</Id>
+      <P xsi:type="e3d:ImportedMeshProperties">
+        <AttachDirection xsi:type="Demo3D.Visuals.AttachDirection">Nearest</AttachDirection>
+        <BodyType xsi:type="e3d:PhysicsBodyType">Load</BodyType>
+        <DeleteOnReset>0</DeleteOnReset>
+        <FrictionMaterial>
+          <Name>Corrugated</Name>
+        </FrictionMaterial>
+        <InitialPositionOnReset>1</InitialPositionOnReset>
+        <Layer>Loads</Layer>
+        <MaintainAspectRatio>0</MaintainAspectRatio>
+        <Materials>
+          <MeshMaterials>
+            <e xsi:type="e3d:MeshMaterial">
+              <Diffuse>-1</Diffuse>
+              <Texture>
+                <Id>58de2801-b69a-4d49-ade2-bfed7e7887d0</Id>
+              </Texture>
+            </e>
+          </MeshMaterials>
+        </Materials>
+        <Mesh>
+          <Id>6c1b393f-a043-46ab-90d2-13c183848098</Id>
+        </Mesh>
+        <NewNameExpr>
+          <E>"CardboardBox"+ID</E>
+        </NewNameExpr>
+        <Scale>1.6666692|1.6666692|1.6666692</Scale>
+        <ShowControlPoints>0</ShowControlPoints>
+        <SimpleProperties>
+          <Aliases>
+            <e xsi:type="e3d:Alias">
+              <Alias>Name</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Name</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Depth</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Depth</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Height</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Height</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Width</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Width</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Materials</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Materials</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Parent</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Parent</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Friction Material</Alias>
+              <Path>
+                <e xsi:type="xsd:string">FrictionMaterial</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Mass</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Mass</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>World Rotation</Alias>
+              <Path>
+                <e xsi:type="xsd:string">VisualRotation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Draggable</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Draggable</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Relative Location</Alias>
+              <Path>
+                <e xsi:type="xsd:string">RelativeLocation</e>
+              </Path>
+            </e>
+            <e xsi:type="e3d:Alias">
+              <Alias>Type</Alias>
+              <Path>
+                <e xsi:type="xsd:string">Type</e>
+              </Path>
+            </e>
+          </Aliases>
+        </SimpleProperties>
+        <Tracking>
+          <Offset>|0.1999997|</Offset>
+        </Tracking>
+        <Type>Cardboard Box</Type>
+      </P>
+    </V>
     <V Name="TurntableConveyor1" Parent="632606e6-df1e-4e89-9504-69ea40acc49a" xsi:type="e3d:TurntableConveyor">
       <LR>1.7243707|0.83|-6.446398|||</LR>
       <Id>d9c5f329-d065-4dc1-bdf9-a22ef7a73564</Id>
