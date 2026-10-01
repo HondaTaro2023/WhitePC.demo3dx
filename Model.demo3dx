@@ -2283,7 +2283,7 @@
         <Height>1</Height>
         <Material>
           <MeshMaterial xsi:type="e3d:MeshMaterial">
-            <Diffuse>-16711681</Diffuse>
+            <Diffuse>-1146130</Diffuse>
           </MeshMaterial>
         </Material>
         <NewNameExpr>
