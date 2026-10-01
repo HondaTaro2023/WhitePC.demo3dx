@@ -19,6 +19,7 @@
     </NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Emulate3D 2026\Emulate3D.Analyzers.dll"/>
     <Analyzer Include="C:\Program Files (x86)\Emulate3D 2026\Emulate3D.SourceGenerators.dll"/>
   </ItemGroup>
   <ItemGroup>
