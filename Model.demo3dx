@@ -1,11 +1,11 @@
 <e3d:Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:e3d="uri://emulate3d.com">
   <e3d:Header>
-    <Version>19.1.0.53</Version>
+    <Version>19.2.0.74</Version>
     <Id>e583e7ea-c9a6-4a57-a772-0d2eae8a04e7</Id>
   </e3d:Header>
   <Resources>
     <MeshLibrary>
-      <Mesh Key="6c1b393f-a043-46ab-90d2-13c183848098" />
+      <Mesh Key="6c1b393f-a043-46ab-90d2-13c183848098" IsEncrypted="False" />
     </MeshLibrary>
     <TextureLibrary>
       <Texture Key="58de2801-b69a-4d49-ade2-bfed7e7887d0" Name="tmpnumgsp" />
@@ -2283,7 +2283,7 @@
         <Height>1</Height>
         <Material>
           <MeshMaterial xsi:type="e3d:MeshMaterial">
-            <Diffuse>-7650029</Diffuse>
+            <Diffuse>-16711681</Diffuse>
           </MeshMaterial>
         </Material>
         <NewNameExpr>
@@ -2461,9 +2461,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Default View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <Position>0.8742552|6.373604|-7.8305273</Position>
         <Target>0.6654391|0.07456589|0.076971054</Target>
       </val>
@@ -2471,9 +2468,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Front View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <Position>|1.5|-10</Position>
         <Target>|1.5|</Target>
       </val>
@@ -2481,9 +2475,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Plan View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <PlanView>1</PlanView>
         <Position>|5|</Position>
       </val>
@@ -2491,9 +2482,6 @@
     <e xsi:type="e3d:DictionaryEntry">
       <key xsi:type="xsd:string">Side View</key>
       <val xsi:type="e3d:Camera">
-        <FocalPlaneColor>
-          <name>Purple</name>
-        </FocalPlaneColor>
         <Position>-10|1.5|</Position>
         <Target>|1.5|</Target>
       </val>
